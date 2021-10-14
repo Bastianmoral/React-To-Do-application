@@ -6,10 +6,14 @@ import ReactDOM from "react-dom";
 import "bootstrap";
 
 //include your index.scss file into the bundle
-import "../styles/index.scss";
 
 //import your own components
-import Todo from "./component/Todo.jsx";
+import App from "./App";
 
 //render your react application
-ReactDOM.render(<Todo />, document.querySelector("#app"));
+ReactDOM.render(
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>,
+	document.querySelector("#app")
+);
